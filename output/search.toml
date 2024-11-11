@@ -1,0 +1,398 @@
+[input]
+base_directory = "output"
+html_selector = "main"
+
+[[input.files]]
+path = "pages/privacy-policy.html"
+url = "/pages/privacy-policy.html"
+title = "Privacy policy"
+
+[[input.files]]
+path = "pages/terms-of-service.html"
+url = "/pages/terms-of-service.html"
+title = "Terms of service"
+
+[[input.files]]
+path = "stick-fighter-vs-zombies.html"
+url = "/stick-fighter-vs-zombies.html"
+title = "Stick Fighter vs Zombies"
+
+[[input.files]]
+path = "minetap-merge-clicker.html"
+url = "/minetap-merge-clicker.html"
+title = "MineTap Merge Clicker"
+
+[[input.files]]
+path = "cuberealmio.html"
+url = "/cuberealmio.html"
+title = "CubeRealm.io"
+
+[[input.files]]
+path = "dop-noob-draw-to-save.html"
+url = "/dop-noob-draw-to-save.html"
+title = "DOP Noob: Draw to Save"
+
+[[input.files]]
+path = "noob-vs-monsters.html"
+url = "/noob-vs-monsters.html"
+title = "Noob VS Monsters"
+
+[[input.files]]
+path = "build-and-crush.html"
+url = "/build-and-crush.html"
+title = "Build and Crush"
+
+[[input.files]]
+path = "skyblock-survive-with-noob.html"
+url = "/skyblock-survive-with-noob.html"
+title = "Skyblock Survive With Noob!"
+
+[[input.files]]
+path = "mineenergy2.html"
+url = "/mineenergy2.html"
+title = "MineEnergy2"
+
+[[input.files]]
+path = "miniblox.html"
+url = "/miniblox.html"
+title = "Miniblox"
+
+[[input.files]]
+path = "merge-mine-mobs-attack.html"
+url = "/merge-mine-mobs-attack.html"
+title = "Merge Mine: Mobs Attack!"
+
+[[input.files]]
+path = "survival-craft-adventure.html"
+url = "/survival-craft-adventure.html"
+title = "Survival Craft Adventure"
+
+[[input.files]]
+path = "noob-miner-2-escape-from-prison.html"
+url = "/noob-miner-2-escape-from-prison.html"
+title = "Noob Miner 2: Escape From Prison"
+
+[[input.files]]
+path = "vampire-pixel-survivors.html"
+url = "/vampire-pixel-survivors.html"
+title = "Vampire Pixel Survivors"
+
+[[input.files]]
+path = "stickman-epic.html"
+url = "/stickman-epic.html"
+title = "Stickman Epic"
+
+[[input.files]]
+path = "noob-zombie-prison-escape.html"
+url = "/noob-zombie-prison-escape.html"
+title = "Noob: Zombie Prison Escape"
+
+[[input.files]]
+path = "chopforge.html"
+url = "/chopforge.html"
+title = "ChopForge"
+
+[[input.files]]
+path = "miners-odyssey.html"
+url = "/miners-odyssey.html"
+title = "Miner's Odyssey"
+
+[[input.files]]
+path = "zoocraft.html"
+url = "/zoocraft.html"
+title = "ZooCraft"
+
+[[input.files]]
+path = "mineenergyfun.html"
+url = "/mineenergyfun.html"
+title = "MineEnergy.fun"
+
+[[input.files]]
+path = "noob-trolls-pro.html"
+url = "/noob-trolls-pro.html"
+title = "Noob Trolls Pro"
+
+[[input.files]]
+path = "monster-school-3.html"
+url = "/monster-school-3.html"
+title = "Monster School 3"
+
+[[input.files]]
+path = "noob-island-escape.html"
+url = "/noob-island-escape.html"
+title = "Noob: Island Escape"
+
+[[input.files]]
+path = "herobrine-vs-monster-school.html"
+url = "/herobrine-vs-monster-school.html"
+title = "Herobrine vs Monster School"
+
+[[input.files]]
+path = "red-stickman-vs-monster-school-2.html"
+url = "/red-stickman-vs-monster-school-2.html"
+title = "Red Stickman vs Monster School 2"
+
+[[input.files]]
+path = "haste-clicker.html"
+url = "/haste-clicker.html"
+title = "Haste-Clicker"
+
+[[input.files]]
+path = "creeper-army-defense.html"
+url = "/creeper-army-defense.html"
+title = "Creeper Army Defense"
+
+[[input.files]]
+path = "craft-world.html"
+url = "/craft-world.html"
+title = "Craft World"
+
+[[input.files]]
+path = "mine-shooter-save-your-world.html"
+url = "/mine-shooter-save-your-world.html"
+title = "Mine Shooter: Save Your World"
+
+[[input.files]]
+path = "noob-miner-escape-from-prison.html"
+url = "/noob-miner-escape-from-prison.html"
+title = "Noob Miner: Escape From Prison"
+
+[[input.files]]
+path = "red-stickman-vs-monster-school.html"
+url = "/red-stickman-vs-monster-school.html"
+title = "Red Stickman vs Monster School"
+
+[[input.files]]
+path = "tntcraft.html"
+url = "/tntcraft.html"
+title = "TNTcraft"
+
+[[input.files]]
+path = "santacraft.html"
+url = "/santacraft.html"
+title = "SantaCraft"
+
+[[input.files]]
+path = "noob-tower-defense.html"
+url = "/noob-tower-defense.html"
+title = "Noob Tower Defense"
+
+[[input.files]]
+path = "boomcraft.html"
+url = "/boomcraft.html"
+title = "BoomCraft"
+
+[[input.files]]
+path = "nubik-vs-herobrins-army.html"
+url = "/nubik-vs-herobrins-army.html"
+title = "Nubik vs Herobrin's Army"
+
+[[input.files]]
+path = "zombiecraft.html"
+url = "/zombiecraft.html"
+title = "ZombieCraft"
+
+[[input.files]]
+path = "idle-noob-lumberjack.html"
+url = "/idle-noob-lumberjack.html"
+title = "Idle Noob Lumberjack"
+
+[[input.files]]
+path = "monster-school-herobrine-siren-head.html"
+url = "/monster-school-herobrine-siren-head.html"
+title = "Monster School Herobrine Siren Head"
+
+[[input.files]]
+path = "noob-vs-pro-zombie-apocalypse.html"
+url = "/noob-vs-pro-zombie-apocalypse.html"
+title = "Noob vs Pro: Zombie Apocalypse"
+
+[[input.files]]
+path = "crazysteveio.html"
+url = "/crazysteveio.html"
+title = "CrazySteve.io"
+
+[[input.files]]
+path = "minemerge.html"
+url = "/minemerge.html"
+title = "MineMerge"
+
+[[input.files]]
+path = "trap-craft.html"
+url = "/trap-craft.html"
+title = "Trap Craft"
+
+[[input.files]]
+path = "slithercraftio.html"
+url = "/slithercraftio.html"
+title = "SlitherCraft.io"
+
+[[input.files]]
+path = "pixel-warfare.html"
+url = "/pixel-warfare.html"
+title = "Pixel Warfare"
+
+[[input.files]]
+path = "pixel-mine-challenge.html"
+url = "/pixel-mine-challenge.html"
+title = "Pixel Mine Challenge"
+
+[[input.files]]
+path = "mine-craftio.html"
+url = "/mine-craftio.html"
+title = "Mine-Craft.io"
+
+[[input.files]]
+path = "mine-blocks.html"
+url = "/mine-blocks.html"
+title = "Mine Blocks"
+
+[[input.files]]
+path = "voxiomio.html"
+url = "/voxiomio.html"
+title = "Voxiom.io"
+
+[[input.files]]
+path = "bloxdio.html"
+url = "/bloxdio.html"
+title = "Bloxd.io"
+
+[[input.files]]
+path = "miner-cat-4.html"
+url = "/miner-cat-4.html"
+title = "Miner Cat 4"
+
+[[input.files]]
+path = "mine-clone.html"
+url = "/mine-clone.html"
+title = "Mine Clone"
+
+[[input.files]]
+path = "craft-destroy.html"
+url = "/craft-destroy.html"
+title = "Craft Destroy"
+
+[[input.files]]
+path = "merge-pickaxe-2.html"
+url = "/merge-pickaxe-2.html"
+title = "Merge Pickaxe 2"
+
+[[input.files]]
+path = "mineclicker.html"
+url = "/mineclicker.html"
+title = "MineClicker"
+
+[[input.files]]
+path = "castlescc-cubic-castles.html"
+url = "/castlescc-cubic-castles.html"
+title = "Castles.cc (Cubic Castles)"
+
+[[input.files]]
+path = "islander.html"
+url = "/islander.html"
+title = "ISLANDER"
+
+[[input.files]]
+path = "minecraft-tower-defense-2.html"
+url = "/minecraft-tower-defense-2.html"
+title = "Minecraft Tower Defense 2"
+
+[[input.files]]
+path = "craft-3d.html"
+url = "/craft-3d.html"
+title = "Craft 3D"
+
+[[input.files]]
+path = "minestrikefun.html"
+url = "/minestrikefun.html"
+title = "MineStrike.fun"
+
+[[input.files]]
+path = "merge-pickaxe.html"
+url = "/merge-pickaxe.html"
+title = "Merge Pickaxe"
+
+[[input.files]]
+path = "horror-nights-story.html"
+url = "/horror-nights-story.html"
+title = "Horror Nights Story"
+
+[[input.files]]
+path = "school-panic.html"
+url = "/school-panic.html"
+title = "School Panic"
+
+[[input.files]]
+path = "shooterz.html"
+url = "/shooterz.html"
+title = "ShooterZ"
+
+[[input.files]]
+path = "pixel-gun-apocalypse-5.html"
+url = "/pixel-gun-apocalypse-5.html"
+title = "Pixel Gun Apocalypse 5"
+
+[[input.files]]
+path = "paper-minecraft.html"
+url = "/paper-minecraft.html"
+title = "Paper Minecraft"
+
+[[input.files]]
+path = "kogama-minecraft.html"
+url = "/kogama-minecraft.html"
+title = "Kogama Minecraft"
+
+[[input.files]]
+path = "zombiecraftio.html"
+url = "/zombiecraftio.html"
+title = "ZombieCraft.io"
+
+[[input.files]]
+path = "worldz.html"
+url = "/worldz.html"
+title = "WorldZ"
+
+[[input.files]]
+path = "kogama-school-is-just-super.html"
+url = "/kogama-school-is-just-super.html"
+title = "Kogama: School Is Just Super"
+
+[[input.files]]
+path = "kogama-hallow-special-trick-or-treat.html"
+url = "/kogama-hallow-special-trick-or-treat.html"
+title = "Kogama: Hallow Special - trick or treat"
+
+[[input.files]]
+path = "kogama-pokemon.html"
+url = "/kogama-pokemon.html"
+title = "Kogama: Pokemon"
+
+[[input.files]]
+path = "grindcraft.html"
+url = "/grindcraft.html"
+title = "GrindCraft"
+
+[[input.files]]
+path = "kogama-windwalk.html"
+url = "/kogama-windwalk.html"
+title = "Kogama: WindWalk"
+
+[[input.files]]
+path = "kogama-crazy-coasters.html"
+url = "/kogama-crazy-coasters.html"
+title = "Kogama: Crazy Coasters"
+
+[[input.files]]
+path = "kogama-escape-from-prison.html"
+url = "/kogama-escape-from-prison.html"
+title = "Kogama: Escape from Prison"
+
+[[input.files]]
+path = "kogama-big-adventure.html"
+url = "/kogama-big-adventure.html"
+title = "Kogama Big Adventure"
+
+[[input.files]]
+path = "minecraft-tower-defense.html"
+url = "/minecraft-tower-defense.html"
+title = "Minecraft Tower Defense"

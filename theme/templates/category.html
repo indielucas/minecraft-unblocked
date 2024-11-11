@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block title %}{{ SITENAME|striptags }} - {{ category }} category{% endblock %}
+
+{% block content %}
+    <div class="mb-8">
+        <h1 class="font-bold mb-4 text-xl">Free {{ category }} games</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-4">
+            {% for article in articles_page.object_list %}
+                <a class="" title="{{ article.title }}" href="{{ SITEURL }}/{{ article.url }}">
+                    <img class="object-cover object-center rounded-md w-full max-h-[180px]" src="{{ article.banner }}" alt="{{ article.title }}">
+                    <h3 class="mt-2 line-clamp-3">{{ article.title }}</h3>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="categories mt-20">
+        {% for cat, null in categories %}
+            <a class="btn btn-sm btn-primary mr-1 mb-2" href="{{ SITEURL }}/{{ cat.url }}" {% if cat==category %} aria-current="page" {% endif %}>{{ cat }}</a>
+        {% endfor %}
+    </div>
+
+    {%  include "pagination.html" %}
+{% endblock %}
+
+

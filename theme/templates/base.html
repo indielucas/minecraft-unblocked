@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html data-theme="synthwave" lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+    {# https://jinja.palletsprojects.com/en/stable/templates/ #}
+    {% block head %}
+        <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if SITESUBTITLE %}
+            <meta name="description" content="{{ SITESUBTITLE }}" />
+        {% endif %}
+        {% if STYLESHEET_URL %}
+            <link rel="stylesheet" type="text/css" href="{{ STYLESHEET_URL }}" />
+        {% endif %}
+        {% if SCRIPT_URL %}
+            <link rel="stylesheet" type="text/css" href="{{ SCRIPT_URL }}" />
+        {% endif %}
+
+        <meta name="canonical" content="{{ SITEURL }}" />
+        <link rel="stylesheet" href="/theme/css/basic.css?t=20241111" />
+    {% endblock head %}
+</head>
+<body class="bg-slate-950">
+
+<header class="max-w-screen overflow-x-hidden">
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="pl-4 text-xl align-middle" href="/" title="{{ SITETITLE }}">
+                <b class="align-middle">Minecraft Unblocked</b>
+            </a>
+        </div>
+
+        <div class="flex-none gap-6">
+            <div class="form-control mr-2">
+                <input data-stork="sitesearch" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+
+            <ul class="menu menu-horizontal px-1">
+                {% for title, link in MENUITEMS %}
+                    <li><a href="{{ link }}">{{ title }}</a></li>
+                {% endfor %}
+                {% if DISPLAY_PAGES_ON_MENU %}
+                    {% for p in pages %}
+                        <li><a href="{{ SITEURL }}/{{ p.url }}" {% if p==page %} aria-current="page" {% endif %}>{{ p.title }}</a></li>
+                    {% endfor %}
+                {% endif %}
+                {% if DISPLAY_CATEGORIES_ON_MENU %}
+                    {% for cat, null in categories %}
+                        <li><a href="{{ SITEURL }}/{{ cat.url }}" {% if cat==category %} aria-current="page" {% endif %}>{{ cat }}</a></li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</header>
+{# search result #}
+<div class="" data-stork="sitesearch-output"></div>
+
+
+
+<main class="min-h-screen mt-12 p-6 overflow-hidden">
+    {% block content %}
+    {% endblock %}
+
+    <div class="card bg-base-100 shadow-xl w-full mb-10">
+        <div class="card-body w-full">
+            <section class="mb-10">
+                <h1 class="text-2xl card-title mb-4">Minecraft Unblocked Free Online Games</h1>
+                <p class="text-lg">
+                    Minecraft Unblocked is your premier destination for <span class="font-semibold">free online games</span>,
+                    delivering instant access to countless exciting titles. Jump straight into gaming without
+                    downloads or waiting - perfect for gaming on any device, anywhere!
+                </p>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="footer bg-base-200 text-base-content p-10">
+    <aside>
+        <p>
+            {{ SITENAME }}, Free Online Games!
+        </p>
+    </aside>
+    <nav>
+        <h6 class="footer-title">Links</h6>
+        <a class="link link-hover" target="_blank" href="https://yix.ai">Yix.AI</a>
+        <a class="link link-hover" target="_blank" href="https://sprunkiincredibox.lol/">Sprunki</a>
+    </nav>
+    <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover" href="/pages/terms-of-service">Terms of service</a>
+        <a class="link link-hover" href="/pages/privacy-policy">Privacy policy</a>
+    </nav>
+</footer>
+
+<script src="/theme/js/stork.js"></script>
+<script>stork.register(
+    "sitesearch",
+    "{{ SITEURL }}/search-index.st"
+);</script>
+</body>
+</html>

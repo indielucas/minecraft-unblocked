@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block html_lang %}{{ article.lang }}{% endblock %}
+
+{% block title %}{{ SITENAME|striptags }} - {{ article.title|striptags  }}{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+    {% import 'translations.html' as translations with context %}
+    {% if translations.entry_hreflang(article) %}
+        {{ translations.entry_hreflang(article) }}
+    {% endif %}
+
+    {% if article.description %}
+        <meta name="description" content="{{article.description}}" />
+    {% endif %}
+
+    {% for tag in article.tags %}
+        <meta name="tags" content="{{tag}}" />
+    {% endfor %}
+
+    <meta name="canonical" content="{{ SITEURL }}/{{ article.url }}" />
+
+{% endblock %}
+
+{% block content %}
+    <div class="w-full">
+        <div class="flex w-full">
+            <div class="flex-1">
+                <iframe src="{{ article.iframe }}" style="width: 100%; height: 600px;" frameborder="0" allow="gamepad *;"></iframe>
+                <h1 class="text-2xl font-bold mt-10 mb-4"> {{ article.title }}</h1>
+                <div class="prose pb-10 max-w-none">{{ article.content }}</div>
+            </div>
+
+            <div class="w-1/4 p-4 ml-4 bg-slate-900">
+                <h3 class="font-bold mb-2 p-4 bg-slate-800 rounded-md">Trending Games</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    {% if article.similar_posts %}
+                        {% for similar in article.similar_posts %}
+                            <div><a class="transition duration-300 ease-in-out hover:opacity-75" href="{{ SITEURL }}/{{ similar.url }}"><img class="rounded-md" src="{{ similar.banner }}" alt="{{ similar.title }}"></a></div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories mt-20">
+        {% for cat, null in categories %}
+            <a class="btn btn-sm btn-primary mr-1 mb-2" href="{{ SITEURL }}/{{ cat.url }}" {% if cat==category %} aria-current="page" {% endif %}>{{ cat }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}

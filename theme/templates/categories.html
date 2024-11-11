@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME|striptags }} - Categories{% endblock %}
+
+{% block content %}
+    <h2 class="text-lg font-bold">Categories on {{ SITENAME }}</h2>
+    <div class="categories mt-8 mb-8">
+        {% for category, articles in categories|sort %}
+            <a class="btn btn-sm btn-primary mr-1 mb-2" href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}

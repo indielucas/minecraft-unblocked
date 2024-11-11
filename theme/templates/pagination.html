@@ -1,0 +1,12 @@
+{% if DEFAULT_PAGINATION %}
+  {% set first_page = articles_paginator.page(1) %}
+  {% set last_page = articles_paginator.page(articles_paginator.num_pages) %}
+
+    <div class="pagination p-10 flex justify-center items-center">
+        <div class="join">
+            <a class="join-item btn {{ 'btn-disabled' if not articles_page.has_previous() }}" href="{{ SITEURL }}/{{ articles_previous_page.url }}">«</a>
+            <span class="join-item btn ">Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}</span>
+            <a class="join-item btn {{ 'btn-disabled' if not articles_page.has_next() }}" href="{{ SITEURL }}/{{ articles_next_page.url }}">»</a>
+        </div>
+    </div>
+{% endif %}
